@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  font-family: Outfit;
+}
+
+/* Set up default underline to be hidden */
+.underline {
+  @apply hidden;
+}
+
+/* Active link underline */
+.active-link .underline {
+  @apply block bg-primary h-0.5 w-3/5 m-auto;
+}
+
+/* Styling for active link text */
+.active-link {
+  @apply text-primary;
+}
+
+::-webkit-scrollbar{
+  @apply hidden
+}
